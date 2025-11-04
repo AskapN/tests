@@ -1,11 +1,11 @@
 import requests
 
 
-token = 'Ваш токен'
+ya_token = 'Ваш токен'
 def create_folder(folder, token):
     try:
         url = 'https://cloud-api.yandex.net/v1/disk/resources'
-        headers = {'Authorization': f'OAuth {token}'}
+        headers = {'Authorization': f'OAuth {ya_token}'}
         params = {'path': f'{folder}'}
         response = requests.put(url, headers=headers, params=params)
         if response.status_code == 401:

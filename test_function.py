@@ -1,6 +1,6 @@
 import pytest
-
 from main import discriminant, solution
+
 
 test_cases_for_discriminant = [
     (1, 8, 15, 4),
